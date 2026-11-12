@@ -1,0 +1,531 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Mama Njeri's Kitchen | A Taste of Home</title>
+
+    <meta name="description"
+          content="Enjoy delicious, freshly prepared Kenyan meals at Mama Njeri's Kitchen.">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- HEADER AND NAVIGATION -->
+    <header class="site-header" id="home">
+
+        <div class="navbar">
+
+            <a href="#home" class="brand">
+                <img src="images/logo.png"
+                     alt="Mama Njeri's Kitchen Logo"
+                     class="logo">
+
+                <span>Mama Njeri's Kitchen</span>
+            </a>
+
+            <nav class="navigation" aria-label="Main navigation">
+                <a href="#home">Home</a>
+                <a href="#menu">Menu</a>
+                <a href="#order">Order</a>
+                <a href="#gallery">Gallery</a>
+                <a href="#visit">Visit Us</a>
+            </nav>
+
+        </div>
+
+    </header>
+
+
+    <!-- HERO SECTION -->
+    <main>
+
+        <section class="hero">
+
+            <div class="hero-content">
+
+                <p class="hero-subtitle">
+                    Freshly Made. Kenyan Inspired.
+                </p>
+
+                <h1>
+                    A Taste of Home,
+                    Made with Love.
+                </h1>
+
+                <p class="hero-description">
+                    Welcome to Mama Njeri's Kitchen, where
+                    every meal brings you the warmth,
+                    flavour, and comfort of home.
+
+                    From aromatic pilau to freshly made
+                    chapati, we serve authentic Kenyan
+                    favourites prepared with love.
+                </p>
+
+                <a href="#menu" class="hero-button">
+                    Explore Our Menu
+                </a>
+
+                <a href="#order" class="hero-button-secondary">
+                    Order Now
+                </a>
+
+            </div>
+
+            <div class="hero-image">
+
+                <img src="images/hero.png"
+                     alt="Delicious Kenyan food at Mama Njeri's Kitchen">
+
+            </div>
+
+        </section>
+
+
+        <!-- INTRODUCTION SECTION -->
+        <section class="welcome-section">
+
+            <div class="section-heading">
+
+                <p class="section-subtitle">Karibu Sana!</p>
+
+                <h2>Good Food. Good Moments.</h2>
+
+                <p>
+                    At Mama Njeri's Kitchen, we believe
+                    that food is more than just a meal.
+                    It's about bringing people together,
+                    celebrating Kenyan flavours, and
+                    creating beautiful memories around
+                    the table.
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- MENU AND ORDER SECTION -->
+        <section class="main-content">
+
+            <!-- MENU TABLE -->
+            <div class="card menu-card" id="menu">
+
+                <div class="section-heading">
+
+                    <p class="section-subtitle">
+                        Something Delicious
+                    </p>
+
+                    <h2>Our Menu</h2>
+
+                    <p>
+                        Discover our freshly prepared
+                        Kenyan favourites.
+                    </p>
+
+                </div>
+
+                <table class="menu-table">
+
+                    <thead>
+                        <tr>
+                            <th scope="col">Dish</th>
+                            <th scope="col">Price</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+
+                        <tr>
+                            <td>Pilau</td>
+                            <td>KES 350</td>
+                        </tr>
+
+                        <tr>
+                            <td>Ugali &amp; Sukuma</td>
+                            <td>KES 250</td>
+                        </tr>
+
+                        <tr>
+                            <td>Chapati (2)</td>
+                            <td>KES 100</td>
+                        </tr>
+
+                    </tbody>
+
+                </table>
+
+                <p class="menu-note">
+                    Freshly prepared and served with love.
+                </p>
+
+            </div>
+
+
+            <!-- ORDER FORM -->
+            <div class="card order-card" id="order">
+
+                <div class="section-heading">
+
+                    <p class="section-subtitle">
+                        Hungry Already?
+                    </p>
+
+                    <h2>Place Your Order</h2>
+
+                    <p>
+                        Choose your favourite meal and
+                        let us know what you're craving.
+                    </p>
+
+                </div>
+
+                <form id="order-form">
+
+                    <div class="form-group">
+
+                        <label for="customer-name">
+                            Your Name
+                        </label>
+
+                        <input
+                            type="text"
+                            id="customer-name"
+                            name="customer_name"
+                            placeholder="Enter your full name"
+                            required>
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label for="customer-phone">
+                            Phone Number
+                        </label>
+
+                        <input
+                            type="tel"
+                            id="customer-phone"
+                            name="phone"
+                            placeholder="e.g. 0712 345 678"
+                            required>
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label for="meal">
+                            Choose Your Meal
+                        </label>
+
+                        <select id="meal" name="meal" required>
+
+                            <option value="" disabled selected>
+                                Select a dish
+                            </option>
+
+                            <option value="pilau">
+                                Pilau - KES 350
+                            </option>
+
+                            <option value="ugali-sukuma">
+                                Ugali &amp; Sukuma - KES 250
+                            </option>
+
+                            <option value="chapati">
+                                Chapati (2) - KES 100
+                            </option>
+
+                        </select>
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label for="quantity">
+                            Quantity
+                        </label>
+
+                        <input
+                            type="number"
+                            id="quantity"
+                            name="quantity"
+                            min="1"
+                            value="1"
+                            required>
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label for="instructions">
+                            Special Instructions
+                        </label>
+
+                        <textarea
+                            id="instructions"
+                            name="instructions"
+                            rows="4"
+                            placeholder="Any special requests?"></textarea>
+
+                    </div>
+
+
+                    <button type="submit" class="order-button">
+                        Send Order
+                    </button>
+
+                </form>
+
+            </div>
+
+        </section>
+
+
+        <!-- FOOD GALLERY -->
+        <section class="gallery-section" id="gallery">
+
+            <div class="section-heading">
+
+                <p class="section-subtitle">
+                    Fresh from Our Kitchen
+                </p>
+
+                <h2>A Little Taste of Happiness</h2>
+
+                <p>
+                    Take a look at some of our favourite
+                    Kenyan dishes.
+                </p>
+
+            </div>
+
+
+            <div class="gallery-grid">
+
+                <!-- PILAU -->
+                <figure class="food-card">
+
+                    <img src="images/pilau.png"
+                         alt="A delicious serving of Kenyan pilau"
+                         loading="lazy">
+
+                    <figcaption>
+
+                        <h3>Kenyan Pilau</h3>
+
+                        <p>
+                            Fragrant, flavourful,
+                            and full of goodness.
+                        </p>
+
+                        <span class="food-price">
+                            KES 350
+                        </span>
+
+                    </figcaption>
+
+                </figure>
+
+
+                <!-- UGALI -->
+                <figure class="food-card">
+
+                    <img src="images/ugali.png"
+                         alt="Ugali served with sukuma wiki"
+                         loading="lazy">
+
+                    <figcaption>
+
+                        <h3>Ugali &amp; Sukuma</h3>
+
+                        <p>
+                            A comforting Kenyan classic
+                            that always feels like home.
+                        </p>
+
+                        <span class="food-price">
+                            KES 250
+                        </span>
+
+                    </figcaption>
+
+                </figure>
+
+
+                <!-- CHAPATI -->
+                <figure class="food-card">
+
+                    <img src="images/chapati.png"
+                         alt="Freshly prepared Kenyan chapati"
+                         loading="lazy">
+
+                    <figcaption>
+
+                        <h3>Soft Chapati</h3>
+
+                        <p>
+                            Golden, soft, and freshly
+                            made with love.
+                        </p>
+
+                        <span class="food-price">
+                            KES 100
+                        </span>
+
+                    </figcaption>
+
+                </figure>
+
+            </div>
+
+        </section>
+
+
+        <!-- VISIT AND CONTACT SECTION -->
+        <section class="visit-section" id="visit">
+
+            <div class="section-heading">
+
+                <p class="section-subtitle">
+                    Come Say Hello
+                </p>
+
+                <h2>Visit Mama Njeri's Kitchen</h2>
+
+                <p>
+                    We'd love to welcome you for
+                    a delicious meal.
+                </p>
+
+            </div>
+
+
+            
+<div class="visit-grid">
+
+    <!-- OPENING HOURS -->
+    <div class="info-card">
+
+        <h3>Opening Hours</h3>
+
+        <p>
+            Monday - Friday: 8:00 AM - 9:00 PM<br>
+            Saturday: 9:00 AM - 10:00 PM<br>
+            Sunday: 10:00 AM - 6:00 PM
+        </p>
+
+        <p>
+            Fresh Kenyan meals served daily!
+        </p>
+
+    </div>
+
+
+    <!-- LOCATION -->
+    <div class="info-card">
+
+        <h3>Find Us</h3>
+
+        <p>
+            Mama Njeri's Kitchen<br>
+            Karibu Plaza, Ground Floor<br>
+            Westlands, Nairobi, Kenya
+        </p>
+
+        <p>
+            Your favourite flavours,
+            right around the corner!
+        </p>
+
+    </div>
+
+
+    <!-- CONTACT -->
+    <div class="info-card">
+
+        <h3>Get in Touch</h3>
+
+        <p>
+            Phone: 07XX XXX XXX<br>
+            Email: hello@mamanjeri.example<br>
+            Instagram: @mamanjeriskitchen
+        </p>
+
+        <p>
+            We'd love to hear from you!
+        </p>
+
+    </div>
+
+</div>
+
+
+        <!-- FINAL CALL TO ACTION -->
+        <section class="closing-section">
+
+            <h2>Made Fresh. Served with Love.</h2>
+
+            <p>
+                Delicious Kenyan meals are always
+                better when shared.
+            </p>
+
+            <a href="#order" class="closing-button">
+                Place Your Order
+            </a>
+
+        </section>
+
+    </main>
+
+
+    <!-- FOOTER -->
+    <footer class="site-footer">
+
+        <div class="footer-content">
+
+            <div class="footer-brand">
+
+                <h3>Mama Njeri's Kitchen</h3>
+
+                <p>
+                    Bringing the taste of home
+                    to every plate.
+                </p>
+
+            </div>
+
+
+            <div class="footer-links">
+
+                <a href="#home">Home</a>
+                <a href="#menu">Menu</a>
+                <a href="#order">Order</a>
+                <a href="#gallery">Gallery</a>
+                <a href="#visit">Visit Us</a>
+
+            </div>
+
+        </div>
+
+        <p class="copyright">
+            &copy; 2026 Mama Njeri's Kitchen.
+            All Rights Reserved.
+        </p>
+
+    </footer>
+
+</body>
+</html>
